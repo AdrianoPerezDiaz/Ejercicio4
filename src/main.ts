@@ -29,32 +29,40 @@ interface Grupo {
     activo : boolean,
     género : string,
 }
-const estiloNombre = "font-size:20px; background:green, strong";
+//let Género : género = 🎵 Pop Rock
+const estiloNombre = ("font-size:20px; background-color : green; font-weight: 800");
 const grupo1 : Grupo = {
-    nombre : "%cThe Beatles", estiloNombre,
+    nombre : "The Beatles",
     año : 1960,
     activo : true,
     género :  "🎵 Pop Rock",
 }
 const grupo2 : Grupo =  {
-    nombre : "%cQueen", estiloNombre,
+    nombre : "Queen", 
     año : 1970,
     activo: false,
     género : "🎸 Rock",
 }
 const grupo3 : Grupo = {
-    nombre : "%cAC DC",estiloNombre,
+    nombre : "AC DC",
     año: 1973,
     activo: true,
-    género : "🎸 Rock",
+    género : "🤘 Hard Rock",
 }
 const grupo4 : Grupo = {
-    nombre : "%cThe Rolling Stones",estiloNombre,
+    nombre : "Ludwig van Beethoven",
+    año : 1770,
+    activo : false,
+    género : "🎼 Clásica",
+}
+const grupo5 : Grupo = {
+    nombre : "The Rolling Stones",
     año : 1962,
     activo: true,
     género : "🎸 Rock",
-}
-console.log(grupo1);
-console.log(grupo2);
-console.log(grupo3);
-console.log(grupo4);
+};
+console.log(`%c${grupo1.nombre}`, estiloNombre), console.log(`${grupo1.año},${grupo1.activo},${grupo1.género}`);
+console.log(`%c${grupo2.nombre}`, estiloNombre), console.log(`${grupo2.año},${grupo2.activo},${grupo2.género}`);
+console.log(`%c${grupo3.nombre}`, estiloNombre), console.log(`${grupo3.año},${grupo3.activo},${grupo3.género}`);
+console.log(`%c${grupo4.nombre}`, estiloNombre), console.log(`${grupo4.año},${grupo4.activo},${grupo4.género}`);
+console.log(`%c${grupo5.nombre}`, estiloNombre), console.log(`${grupo5.año},${grupo5.activo},${grupo5.género}`);
